@@ -117,6 +117,14 @@ a {
 }
 
 @media(prefers-color-scheme:dark){
+  body {
+    background: linear-gradient(90deg, rgb(114, 8, 8), rgb(6, 104, 104)) no-repeat center fixed;
+    &::before {
+      mask-image: linear-gradient(to bottom, transparent, black);
+	-webkit-mask-image: linear-gradient(to bottom, transparent, black);
+    background: linear-gradient(90deg, rgb(100, 18, 59), rgb(44, 6, 85)) no-repeat center fixed;
+    }
+  }
   .navbar {
     background: #272727;
     color: #eee;
@@ -125,7 +133,7 @@ a {
     color: #eee;
   }
   #main {
-    background-color: rgba(68, 68, 68, 0.8);
+    background-color: rgba(51, 51, 51, 0.8);
     color: #eee;
   }
 }
