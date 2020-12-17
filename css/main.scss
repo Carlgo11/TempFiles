@@ -1,0 +1,99 @@
+---
+---
+body {
+  background: linear-gradient(90deg, red, cyan);
+  min-height: 100vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    mask-image: linear-gradient(to bottom, transparent, black);
+    background: linear-gradient(90deg, hotpink, rebeccapurple);
+  }
+}
+
+#main {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn, input, span {
+  border-radius: 0 !important;
+}
+
+.navbar {
+  background-color: #eee;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nocolor {
+  color: #272727 !important;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#logo {
+  width: 58px;
+  margin: -2px 1rem 0 0;
+}
+
+.nav-item {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.nav-link {
+  color: #272727;
+  display: block;
+
+  &:hover {
+    background: #3d3d3d;
+    color: #eee;
+  }
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #272727c0;
+
+  &::before {
+    content: 'Drop files to upload';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-size: 2.5em;
+  }
+}

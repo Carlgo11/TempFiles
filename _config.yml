@@ -1,0 +1,5 @@
+title: TempFiles
+permalink: pretty
+sass:
+  sass_dir: css
+  style: compressed

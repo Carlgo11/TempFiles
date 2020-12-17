@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>{{site.title}}</title>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css" integrity="sha512-fjZwDJx4Wj5hoFYRWNETDlD7zty6PA+dUfdRYxe463OBATFHyx7jYs2mUK9BZ2WfHQAoOvKl6oYPCZHd1+t7Qw=="
+		crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon alternative" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+	<nav class="navbar navbar-static-top navbar-expand-sm">
+		<div class="container">
+			<a class="navbar-brand nocolor d-none d-lg-block" href="/">
+				<img alt="logo" id="logo" src="img/logo.svg">TempFiles</a>
+			<ul class="navbar-nav col-12 col-md-4">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Upload</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/download/">Download</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/delete/">Delete</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/sharex/">ShareX</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="main" class="center col-12 col-xl-5">
+    {{ content }}
+	</div>
+  <div id="popup"></div>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script async src="js/dragdrop.js"></script>
+</body>
+</html>
