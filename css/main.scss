@@ -61,6 +61,7 @@ a {
 
 #logo {
   width: 58px;
+  height: 31.328px;
   margin: -2px 1rem 0 0;
 }
 
@@ -81,6 +82,11 @@ a {
   }
 }
 
+#title {
+  text-align: center;
+  margin: 0 0 0.7em 0;
+}
+
 #popup {
   display: none;
   position: fixed;
@@ -97,4 +103,8 @@ a {
     color: #eee;
     font-size: 2.5em;
   }
+}
+
+#success {
+  display: none;
 }

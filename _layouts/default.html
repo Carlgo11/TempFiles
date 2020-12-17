@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="{{ site.description }}">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>{{site.title}}</title>
+	<title>{{ site.title }}</title>
 	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css" integrity="sha512-fjZwDJx4Wj5hoFYRWNETDlD7zty6PA+dUfdRYxe463OBATFHyx7jYs2mUK9BZ2WfHQAoOvKl6oYPCZHd1+t7Qw=="
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css"
+		integrity="sha512-fjZwDJx4Wj5hoFYRWNETDlD7zty6PA+dUfdRYxe463OBATFHyx7jYs2mUK9BZ2WfHQAoOvKl6oYPCZHd1+t7Qw=="
 		crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon alternative" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+	<link rel="icon alternative" href="img/favicon.png" type="image/png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+		integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+		crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,10 +41,10 @@
 	</nav>
 
 	<div id="main" class="center col-12 col-xl-5">
-    {{ content }}
+		{{ content }}
 	</div>
-  <div id="popup"></div>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-  <script async src="js/dragdrop.js"></script>
+	<div id="popup"></div>
+	<script async src="js/dragdrop.js"></script>
 </body>
+
 </html>
