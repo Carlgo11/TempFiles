@@ -94,28 +94,6 @@ a {
   margin: 0 0 0.7em 0;
 }
 
-#popup {
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: #272727c0;
-
-  &::before {
-    content: 'Drop files to upload';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #eee;
-    font-size: 2.5em;
-  }
-}
-
-#success {
-  display: none;
-}
-
 @media(prefers-color-scheme:dark){
   body {
     background: linear-gradient(90deg, rgb(114, 8, 8), rgb(6, 104, 104)) no-repeat center fixed;

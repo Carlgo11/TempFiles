@@ -11,6 +11,9 @@
 		integrity="sha512-fjZwDJx4Wj5hoFYRWNETDlD7zty6PA+dUfdRYxe463OBATFHyx7jYs2mUK9BZ2WfHQAoOvKl6oYPCZHd1+t7Qw=="
 		crossorigin="anonymous" />
 	<link rel="stylesheet" href="/css/main.css">
+	{% if page.title == 'upload' %}
+	<link rel="stylesheet" href="/css/upload.css">
+	{% endif %}
 	<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 	<link rel="icon alternative" href="/img/favicon.png" type="image/png">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -43,7 +46,14 @@
 	<div id="main" class="center col-12 col-xl-5">
 		{{ content }}
 	</div>
+	{% if page.title == 'upload' %}
 	<div id="popup"></div>
+	<script async src="/js/dragdrop.js"></script>
+	<script async src="js/upload.js"></script>
+	{% endif %}
+	{% if page.title == 'download' %}
+	<script async src="/js/download.js"></script>
+	{% endif %}
 </body>
 
 </html>
