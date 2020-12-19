@@ -1,6 +1,8 @@
 title: TempFiles
-description: Temporary file storage
 permalink: pretty
+author:
+  name: "Carlgo11"
+  url: "https://carlgo11.com/"
 sass:
   sass_dir: css
   style: compressed

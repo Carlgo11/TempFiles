@@ -3,8 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="{{ site.description }}">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="description" content="{{ site.github.project_tagline }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="{{ site.author.name}}">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="supported-color-schemes" content="light dark">
+	<meta property="og:type" content="website">
 	<title>{{ site.title }}</title>
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css"
@@ -16,6 +20,7 @@
 	{% endif %}
 	<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 	<link rel="icon alternative" href="/img/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
 		integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 		crossorigin="anonymous"></script>
@@ -43,8 +48,11 @@
 		</div>
 	</nav>
 
-	<div id="main" class="center col-12 col-xl-5">
+	<div id="main" class="center col-12 col-md-11 col-xl-5">
 		{{ content }}
+	</div>
+	<div class="footer">
+		<p>Created by <a href="{{ site.author.url }}">@{{ site.author.name }}</a></p>
 	</div>
 	{% if page.title == 'upload' %}
 	<div id="popup"></div>
@@ -53,6 +61,9 @@
 	{% endif %}
 	{% if page.title == 'download' %}
 	<script async src="/js/download.js"></script>
+	{% endif %}
+	{% if page.title == 'delete' %}
+	<script async src="/js/delete.js"></script>
 	{% endif %}
 </body>
 

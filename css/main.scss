@@ -94,6 +94,14 @@ a {
   margin: 0 0 0.7em 0;
 }
 
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+}
+
 @media(prefers-color-scheme:dark){
   body {
     background: linear-gradient(90deg, rgb(114, 8, 8), rgb(6, 104, 104)) no-repeat center fixed;
@@ -109,6 +117,9 @@ a {
   }
   .nav-link {
     color: #eee;
+  }
+  .footer {
+    color: #ccc;
   }
   #main {
     background-color: rgba(51, 51, 51, 0.8);
