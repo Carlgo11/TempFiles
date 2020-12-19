@@ -102,6 +102,10 @@ a {
   text-align: center;
 }
 
+#success {
+  display: none;
+}
+
 @media(prefers-color-scheme:dark){
   body {
     background: linear-gradient(90deg, rgb(114, 8, 8), rgb(6, 104, 104)) no-repeat center fixed;
