@@ -1,0 +1,1 @@
+$(function(){let a=new URLSearchParams(window.location.search);a.has("id")&&$("#id").val(a.get("id")),a.has("delete")&&$("#del-pass").val(a.get("delete"))});

@@ -1,0 +1,1 @@
+$("#delete-form").submit(a=>{a.preventDefault(),$.ajax({type:"DELETE",url:"https://api.tempfiles.download/delete/?"+$.param({id:$("#id").val(),delete:$("#del-pass").val()}),success:()=>{$("#delete-form").hide(),$("#success").show(),$("#title").text("File Deleted")}})});

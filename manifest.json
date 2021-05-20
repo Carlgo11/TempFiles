@@ -1,0 +1,16 @@
+{
+  "short_name": "/tmp",
+  "name": "TempFiles",
+  "icons": [
+    {
+      "src": "/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#EEEEEE",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#272727"
+}

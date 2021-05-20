@@ -1,0 +1,1 @@
+ondragover=ondragenter=a=>{a.stopPropagation(),a.preventDefault(),$("#popup").show()},ondrop=a=>{a.stopPropagation(),a.preventDefault(),file.files=a.dataTransfer.files,file.dispatchEvent(new Event("change")),$("#popup").hide()};
